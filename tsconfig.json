@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es2021",
+    "module": "es2020",
+    "moduleResolution": "node",
+    "lib": ["es2021", "dom"],
+    "rootDir": ".",
+    "baseUrl": ".",
+    "paths": {
+      "@getcourse/*": ["../getcourse.chatium.com/*"],
+      "/*": ["./*"],
+      "@879797-gc/*": ["./*"]
+    },
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "jsxFactory": "jsx",
+    "jsxFragmentFactory": "jsx.Fragment",
+    "strict": true,
+    "noUncheckedIndexedAccess": true
+  },
+  "include": [
+    "**/*", ".**/*"
+  ],
+  "exclude": [
+    "./node_modules/**/*"
+  ],
+  "files": [
+    "./node_modules/@app/types/globals.d.ts",
+    "./node_modules/@app/types/modules.d.ts",
+    "./node_modules/@app/ui/global-jsx.d.ts"
+  ]
+}
